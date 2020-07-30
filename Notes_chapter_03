@@ -1,0 +1,119 @@
+Notes Python 4 Everybody
+
+COMPARISON OPERATORS
+< Less than
+<= Less than or equal to
+== Equal to
+>= Greater than or equal to
+> Greater than
+!= Not equal to
+
+Boolean Expression - ask a question and produce a YES OR NO result which we use to control program flow
+Boolean Expression - using comparison operators evaluate to TRUE/FALSE or YES/NO
+Comparison Operators look at the variable but do not change it
+
+x=1
+y=11
+
+if x==0:
+    if y==10:
+        print("yes")
+if x>0:
+    if y>10:
+        print('No')
+print('All Done') #dará um négocio do tipo acabou mesmo pai!
+if x==0:
+    if y==10:
+        print("yes") # é a mesma coisa do de cima! mas usando else
+    else:
+        print('no')
+print('All Done')
+
+Mesmo jeito de usar com o de cima
+
+#Comment only to separate it! :)
+
+        x=5
+        if x<10:
+            print('smaller')
+        if x>20:
+            print('Bigger')
+        print('Finis')
+
+# Comment only to separate it!
+
+        x=42
+        if x>1:
+            print('More than 1')
+            if x<100:
+                print('Less than 100')
+        print('All done')
+___________________________
+FOR RANGE - NÃO ENTENDI AINDA ESSA PORRA DE LOOP
+for i in range(5):
+    print(i)
+    if i>2:
+        print('Bigger than 2')
+    print('Done with i ', i)
+print('All done')
+___________________________
+
+MULTI-WAY
+
+x=5 # se x=0 seria output small e All done, com x=5 será Medium e All Done
+if x<2 :
+  print('Small')
+elif x<10: #usa elif para vários if
+  print('Medium')
+else:
+  print('Large')
+print('All Done')
+
+exemplo de vários elif
+
+x=5
+if x<2:
+  print('Small')
+elif x<10:
+  print('Medium')
+elif x<20:
+  print('Big')
+elif x<40:
+  print('Large')
+elif x<100:
+  print('huge')
+else:
+  print('Ginormous')
+
+------------------------
+TRY AND EXCEPT
+eles são usados para evitar erros de algum input ou algo do genero
+exemplo:
+astr='Hello Bob'
+try:
+  astr=int(astr) #isso não vai rodar não tem como colocar um int em uma str
+except: # nesse caso a gente coloca um except pq a linha de try está errada
+  astr=-1
+print('First', astr)
+
+exemplo
+astr='123'
+try:
+  astr=int(astr) #agora dará certo
+except:
+  astr=-1 #não vou precisar do except pq já deu certo a linha try
+print('Second', astr)
+
+PARA EVITAR ERROS
+usar try / except
+
+COMANDOS NO TERMINAL
+cd Desktop
+pwd
+ls
+cd .. (para voltar aonde voce tava antes)
+cd py4e
+pwd
+ls
+etc..
+comand + k - clean everything 
